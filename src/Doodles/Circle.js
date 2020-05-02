@@ -7,7 +7,7 @@ export const Circle = ({ text }) => {
     let ctx = canvas.getContext("2d");
 
     canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    canvas.height = window.innerHeight - 82;
 
     let requestID,
       i = 0;
@@ -38,12 +38,5 @@ export const Circle = ({ text }) => {
     };
   });
 
-  return (
-    <>
-      <canvas
-        ref={ref}
-        style={{ position: "absolute", top: "0px", left: "0px" }}
-      />
-    </>
-  );
+  return <canvas ref={ref} />;
 };

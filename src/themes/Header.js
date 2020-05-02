@@ -7,21 +7,19 @@ const { Header: AntHeader } = Layout;
 
 const StyledHeader = styled(AntHeader)`
   display: flex;
-  margin: 0 30px 0 30px;
   justify-content: space-between;
   padding: 0;
   line-height: 75px;
   height: fit-content;
-
-  @media (max-width: 500px) {
-    line-height: 30px;
-  }
 
   .page-title {
     display: flex;
     font-size: 24px;
     font-weight: 400;
     margin: 0 30px;
+    @media (max-width: 500px) {
+      font-size: 18px;
+    }
   }
 
   .nav-item {

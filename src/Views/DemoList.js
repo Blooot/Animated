@@ -43,11 +43,7 @@ const CardWrapper = styled.div`
   margin: 30px 0;
 
   .cards {
-    max-width: 200px;
     min-height: 200px;
-    padding: 30px;
-    background: #27182e;
-    border-radius: 8px;
   }
 `;
 

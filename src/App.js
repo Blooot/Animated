@@ -5,7 +5,7 @@ import { GlobalStyle } from "./themes/global";
 import { BrowserRouter } from "react-router-dom";
 import { renderRoutes } from "react-router-config";
 import { routes } from "./routes";
-// import "../src/styles/antd.css";
+import "../src/styles/antd.css";
 
 const App = () => {
   return (
