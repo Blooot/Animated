@@ -3,9 +3,18 @@ import PublicLayout from "../themes/PublicLayout";
 import styled from "styled-components";
 import { pufferTrain, Grid } from "../utils/gridTools";
 
-const Wrapper = styled.div`
-  display: flex;
-  flex: 1 0 auto;
+const Wrapper = styled.div``;
+const Message = styled.div`
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 30%;
 `;
 
 export const Home = () => {
@@ -80,7 +89,6 @@ export const Home = () => {
 
   let ref = useRef();
   useEffect(() => {
-    let PAUSED = false;
     let canvas = ref.current;
     let ctx = canvas.getContext("2d");
     const w_inner = window.innerWidth;
@@ -91,7 +99,6 @@ export const Home = () => {
       Math.ceil(h_inner / SQUARE),
       Math.ceil(w_inner / SQUARE)
     );
-    // g[7][6] = 1;
 
     canvas.addEventListener("click", (e) => {
       let coords = {
@@ -101,20 +108,6 @@ export const Home = () => {
       let gx = coords.x <= 0 ? 0 : coords.x;
       let gy = coords.y <= 0 ? 0 : coords.y;
       g[gy][gx] === 0 ? (g[gy][gx] = 1) : (g[gy][gx] = 0);
-    });
-
-    window.addEventListener("keypress", (e) => {
-      if (e.key === "p") {
-        if (PAUSED) {
-          PAUSED = false;
-          alert(PAUSED);
-          render();
-        } else {
-          PAUSED = true;
-          alert(PAUSED);
-          cancelAnimationFrame(requestID);
-        }
-      }
     });
 
     let drawing = false;
@@ -153,11 +146,18 @@ export const Home = () => {
     return () => {
       cancelAnimationFrame(requestID);
     };
-  }, []);
+  });
 
   return (
     <PublicLayout headerProps={{ text: "Demos ->", to: "/demos" }}>
-      <canvas style={{ marginTop: "2px" }} ref={ref} />
+      <Wrapper>
+        <canvas style={{ marginTop: "2px", position: "absolute" }} ref={ref} />
+        <Message>
+          <h1>Hello!</h1>
+          You can click and drag to play around here, or go check out some of my
+          other demos/blog posts!
+        </Message>
+      </Wrapper>
     </PublicLayout>
   );
 };

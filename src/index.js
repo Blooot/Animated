@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import { Row, Col } from "antd";
 
 ReactDOM.render(
   <React.StrictMode>

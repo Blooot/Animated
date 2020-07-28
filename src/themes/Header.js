@@ -1,5 +1,5 @@
 import React from "react";
-import { Layout, Button } from "antd";
+import { Layout } from "antd";
 import styled from "styled-components";
 import StyledLink from "../components/StyledLink";
 
@@ -11,6 +11,7 @@ const StyledHeader = styled(AntHeader)`
   padding: 0;
   line-height: 75px;
   height: fit-content;
+  user-select: none;
 
   .page-title {
     display: flex;
@@ -28,7 +29,7 @@ const StyledHeader = styled(AntHeader)`
 `;
 
 const Wrapper = styled.div`
-  box-shadow: 0 2px 8px #392442;
+  box-shadow: 0 2px 1px #392442;
   z-index: 1;
 `;
 
