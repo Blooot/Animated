@@ -15,20 +15,6 @@ const Wrapper = styled.div`
       }
     }
   }
-  h3 {
-    color: ${(props) => props.theme.text};
-    font-weight: bold;
-    font-size: 1.75rem;
-    line-height: 35px;
-    text-transform: capitalize;
-    margin: 0;
-  }
-  p {
-    font-size: 0.8rem;
-    line-height: 35px;
-    color: ${(props) => props.theme.text};
-    margin: 0;
-  }
 `;
 const BasePost = ({ post }) => {
   return (

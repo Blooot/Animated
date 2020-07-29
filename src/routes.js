@@ -1,7 +1,7 @@
 import { Main } from "./Main";
-import { Home } from "./Views/Home";
+import { GraphBlog } from "./Views/BlogPosts/GraphBlog/GraphBlog";
 import { DemoList } from "./Views/DemoList";
-import { GraphBlog } from "./Views/GraphBlog";
+import { Home } from "./Views/Home";
 
 export const routes = [
   {

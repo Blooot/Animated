@@ -16,7 +16,7 @@
     "react-scripts": "3.4.1",
     "styled-components": "^5.1.0"
   },
-  "homepage": "https://www.dalehamilton.dev/",
+  "homepage": "www.dalehamilton.dev",
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "yarn run build",
