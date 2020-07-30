@@ -19,7 +19,7 @@ export const routes = [
         component: DemoList,
       },
       {
-        path: "/graphblog-06-2020",
+        path: "/GraphsAndStateMachines",
         exact: true,
         component: GraphBlog,
       },

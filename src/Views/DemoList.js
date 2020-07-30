@@ -2,7 +2,7 @@ import React from "react";
 import PublicLayout from "../themes/PublicLayout";
 import styled from "styled-components";
 import { Post } from "../components/Post";
-import { demos } from "../Demos/Demos";
+import demos from "../Demos/Demos";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -24,6 +24,7 @@ const Posts = styled.div`
 `;
 
 export const DemoList = () => {
+  demos.reverse();
   return (
     <PublicLayout headerProps={{ text: "<- Home", to: "/" }}>
       <Wrapper>

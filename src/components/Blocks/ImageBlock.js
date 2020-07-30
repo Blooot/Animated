@@ -6,7 +6,6 @@ const Wrapper = styled.div`
   text-align: center;
   img {
     max-width: 100%;
-    padding: 0 10px;
   }
 `;
 
