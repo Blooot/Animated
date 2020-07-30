@@ -6,6 +6,13 @@ import { Row, Col } from "antd";
 const Wrapper = styled.div`
   margin-top: 30px;
   width: 100%;
+  a {
+    color: ${(props) => props.theme.textLink};
+    text-decoration: underline;
+    :hover {
+      color: ${(props) => props.theme.textLinkHover};
+    }
+  }
 `;
 
 export const BlogPost = ({ children }) => {

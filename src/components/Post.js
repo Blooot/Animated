@@ -5,7 +5,7 @@ import React from "react";
 const Wrapper = styled.div`
   border-bottom: 1px solid ${(props) => props.theme.text};
   a {
-    padding: 15px;
+    padding: 5px;
     text-decoration: none;
     display: block;
     &:hover {
@@ -20,7 +20,7 @@ const BasePost = ({ post }) => {
   return (
     <Wrapper>
       <Link to={post.href}>
-        <h3>{post.title}</h3>
+        <h4>{post.title}</h4>
         <p>{post.body}</p>
       </Link>
     </Wrapper>

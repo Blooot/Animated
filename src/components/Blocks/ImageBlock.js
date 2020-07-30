@@ -10,12 +10,19 @@ const Wrapper = styled.div`
   }
 `;
 
-export const ImageBlock = ({ src, children }) => {
+export const ImageBlock = ({ src, children, credit }) => {
   return (
     <Row justify="center">
       <Col xs={24} sm={20} md={14} lg={14} xl={14}>
         <Wrapper>
           <img src={src} alt={children} />
+          <div>
+            {credit && (
+              <p>
+                <a href={credit}>Reference</a>
+              </p>
+            )}
+          </div>
         </Wrapper>
       </Col>
     </Row>

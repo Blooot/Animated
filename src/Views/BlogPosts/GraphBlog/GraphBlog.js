@@ -18,16 +18,21 @@ export const GraphBlog = () => {
 
       <HeaderBlock>Introduction</HeaderBlock>
       <TextBlock>
-        meeep meeeep meeeep meeeep meeeep meeeep meeeep meeeep meeeep meeeep
+        meeep meeeep meeeep <a href="google.com">Meep</a> meeeep meeeep meeeep
         meeeep meeeep meeeep meeeep meeeep meeeep meeeep meeeep meeeep meeeep
         meeeep meeeep meeeep meeeep meeeep meeeep meeeep meeeep meeeep meeeep
-        meeeep meeeep meeeep meeeep meeeep meeep meep
+        meeeep meeeep meeeep meeeep meeeep meeeep meeeep meeeep meeeep meeep
+        meep
       </TextBlock>
       <HeaderBlock>A Subheader</HeaderBlock>
       <TextBlock>A second set of text... and an IMAGE:</TextBlock>
-      <ImageBlock src={getImagePath(local, "TestImage.png")}>
-        Image SRC
+      <ImageBlock
+        credit="www.google.com"
+        src={getImagePath(local, "TestImage.png")}
+      >
+        Image of my desktop
       </ImageBlock>
+      <TextBlock>And here is the next paragraph section</TextBlock>
     </BlogPost>
   );
 };

@@ -1,7 +1,7 @@
 module.exports = [
   {
-    title: "Graphs problems and State Machines",
-    body: "Exploring how to represent problems as finite state machines",
+    title: "State Machines: Solving Abstract Problems With Graph Algorithms",
+    body: "An exploration of problem modeling",
     href: "GraphsAndStateMachines",
   },
 ];
