@@ -28,30 +28,31 @@ const sliceAndAppendToFile = (path, addition, sliceDistance) => {
   fs.writeFileSync(path, dataOut);
 };
 
+// Create new dir for the new blog post
 const blogPath = path.resolve(
   path.join("src", "Views", "BlogPosts", argv.blog)
 );
-
 fs.mkdirSync(blogPath);
+
+//Create blog template
 const fileDest = path.resolve(
   path.join("src", "Views", "BlogPosts", argv.blog, `${argv.blog}.js`)
 );
-
 let date = moment().format("MMM Do YYYY");
+let data = `import React from "react";\nimport {DateBlock,HeaderBlock,ImageBlock,TextBlock,TitleBlock,} from "../../../components/Blocks/index"\nimport { BlogPost } from "../../../components/BlogPost"\nimport { getImagePath } from "../../../utils/getImagePath";\nexport const ${argv.blog} = () => {\nconst local = ${argv.blog}\nreturn (\n<BlogPost>\n<TitleBlock>Temp</TitleBlock>\n<DateBlock>${date}</DateBlock>\n</BlogPost>)}`;
+fs.writeFileSync(fileDest, data);
 
-let data = `import React from "react";\nimport {DateBlock,HeaderBlock,ImageBlock,TextBlock,TitleBlock,} from "../../../components/Blocks/index"\nimport { BlogPost } from "../../../components/BlogPost"\n\nexport const ${argv.blog} = () => {\nreturn (\n<BlogPost>\n<TitleBlock>Temp</TitleBlock>\n<DateBlock>${date}</DateBlock>\n</BlogPost>)}`;
-
-// Create new object in demos
+// Create new object in demos.js to display new blog entry
 const demosPath = path.resolve(path.join("src", "Demos", "Demos.js"));
 const newDemo = `{title: "${argv.title}",body: "${argv.desc}", href: "${argv.blog}",\n},\n];`;
 sliceAndAppendToFile(demosPath, newDemo, -3);
-// Create new route
+
+// import new component and create new route
 const routesPath = path.resolve(path.join("src", "routes.js"));
 const newImport = `\nimport {${argv.blog}} from "./Views/BlogPosts/${argv.blog}/${argv.blog}";\n`;
 prependFile(routesPath, newImport);
 const newRoute = `{path: "/${argv.blog}", exact: true, component: ${argv.blog},\n},\n],\n},\n];`;
 sliceAndAppendToFile(routesPath, newRoute, -11);
 
-fs.writeFileSync(fileDest, data);
 console.log(`${chalk.red.bold("...")}`);
 console.log(`Finished creating ${chalk.green.bold(argv.blog)}`);

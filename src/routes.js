@@ -14,7 +14,7 @@ export const routes = [
         component: Home,
       },
       {
-        path: "/demos",
+        path: "/blog",
         exact: true,
         component: DemoList,
       },

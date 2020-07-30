@@ -9,7 +9,7 @@ const StyledTitle = styled.h3`
 export const TitleBlock = ({ children }) => {
   return (
     <Row justify="center">
-      <Col span={12}>
+      <Col xs={14} sm={14} md={12} lg={8} xl={8}>
         <StyledTitle>{children}</StyledTitle>
       </Col>
     </Row>

@@ -3,6 +3,7 @@ import PublicLayout from "../themes/PublicLayout";
 import styled from "styled-components";
 import { Post } from "../components/Post";
 import demos from "../Demos/Demos";
+let d = demos.reverse();
 
 const Wrapper = styled.div`
   width: 100%;
@@ -13,7 +14,7 @@ const Title = styled.div`
   justify-content: center;
   align-items: center;
   font-size: 24px;
-  margin: 50px 0;
+  margin-top: 50px;
 `;
 
 const Posts = styled.div`
@@ -24,13 +25,12 @@ const Posts = styled.div`
 `;
 
 export const DemoList = () => {
-  demos.reverse();
   return (
     <PublicLayout headerProps={{ text: "<- Home", to: "/" }}>
       <Wrapper>
-        <Title>Thanks for reading!</Title>
+        <Title>Thanks for reading :)</Title>
         <Posts>
-          {demos.map((p) => (
+          {d.map((p) => (
             <Post key={p.title} post={p}></Post>
           ))}
         </Posts>

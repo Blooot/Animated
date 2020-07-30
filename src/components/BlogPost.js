@@ -5,13 +5,14 @@ import { Row, Col } from "antd";
 
 const Wrapper = styled.div`
   margin-top: 30px;
+  width: 100%;
 `;
 
 export const BlogPost = ({ children }) => {
   return (
-    <PublicLayout headerProps={{ text: "<- Demos", to: "/demos" }}>
+    <PublicLayout headerProps={{ text: "<- Blog", to: "/blog" }}>
       <Row justify="center">
-        <Col>
+        <Col style={{ width: "100%" }}>
           <Wrapper>{children}</Wrapper>
         </Col>
       </Row>

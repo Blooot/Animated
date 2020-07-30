@@ -146,16 +146,16 @@ export const Home = () => {
     return () => {
       cancelAnimationFrame(requestID);
     };
-  });
+  }, []);
 
   return (
-    <PublicLayout headerProps={{ text: "Demos ->", to: "/demos" }}>
+    <PublicLayout headerProps={{ text: "Blog ->", to: "/blog" }}>
       <Wrapper>
         <canvas style={{ marginTop: "2px", position: "absolute" }} ref={ref} />
         <Message>
           <h1>Hello!</h1>
-          You can click and drag to play around here, or go check out some of my
-          other demos/blog posts!
+          You can click and drag to play around here, or feel free to check out
+          some of my blog posts.
         </Message>
       </Wrapper>
     </PublicLayout>

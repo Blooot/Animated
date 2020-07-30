@@ -10,7 +10,7 @@ const Wrapper = styled.div`
 export const DateBlock = ({ children }) => {
   return (
     <Row justify="center">
-      <Col xs={20} sm={20} md={16}>
+      <Col xs={20} sm={20} md={14}>
         <Wrapper>{children}</Wrapper>
       </Col>
     </Row>

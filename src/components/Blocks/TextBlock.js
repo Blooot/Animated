@@ -4,12 +4,13 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
   margin: 20px 0;
+  min-width: 100%;
 `;
 
 export const TextBlock = ({ children }) => {
   return (
     <Row justify="center">
-      <Col xs={20} sm={20} md={16}>
+      <Col xs={20} sm={20} md={14}>
         <Wrapper>{children}</Wrapper>
       </Col>
     </Row>
