@@ -21,7 +21,7 @@ const argv = yargs
   .help("help").argv;
 
 console.log(`Creating blog template for ${chalk.green.bold(argv.blog)}`);
-
+// hacky but fine for now
 const sliceAndAppendToFile = (path, addition, sliceDistance) => {
   let oldData = fs.readFileSync(path).toString();
   let dataOut = oldData.slice(0, sliceDistance).concat(addition);

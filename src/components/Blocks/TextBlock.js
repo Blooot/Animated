@@ -5,6 +5,9 @@ import styled from "styled-components";
 const Wrapper = styled.div`
   margin: 20px 0;
   min-width: 100%;
+  ul {
+    margin: 15px 0;
+  }
 `;
 
 export const TextBlock = ({ children }) => {

@@ -14,7 +14,7 @@ export const GraphBlog = () => {
   return (
     <BlogPost>
       <TitleBlock>Graph Problems and State Machines</TitleBlock>
-      <DateBlock>July 29, 2020</DateBlock>
+      <DateBlock>August 10, 2020</DateBlock>
 
       <HeaderBlock>Introduction</HeaderBlock>
       <TextBlock>
