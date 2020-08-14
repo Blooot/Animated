@@ -14,21 +14,27 @@ export const PathToCS = () => {
       </TitleBlock>
       <DateBlock>Aug 10th 2020</DateBlock>
 
-      <HeaderBlock>Intro</HeaderBlock>
+      <HeaderBlock>Intro:</HeaderBlock>
       <TextBlock>
-        This topic has been explored by many. Everyone's path to a new career is
-        different, and I think there are many great ways to break into this
-        field. A colleague and inspiration of mine has{" "}
+        This topic has been explored by many, but I'd like for this post to
+        accomplish two things. First, I want to share my thought process for
+        choosing what to study. Second, I want to curate materials that I think
+        are useful.
+      </TextBlock>
+      <TextBlock>
+        A colleague and inspiration of mine has{" "}
         <a href="https://jasonbenn.com/post/how-i-learned-to-code">
           written and thought extensively
         </a>{" "}
-        about self-learning, and I asked his advice while I was deciding whether
-        I should commit to a career change (it's a lot of work!).
+        about self-learning, and I'm grateful that I had his support while
+        entering this field. Thanks, Jason!
       </TextBlock>
+      <HeaderBlock>Planning:</HeaderBlock>
+
       <TextBlock>
         When defining your learning path, it's important to think deeply about
         your current situation and the constraints you aim to satisfy during
-        your journey.
+        your studies.
       </TextBlock>
       <TextBlock>
         For example:
@@ -181,7 +187,7 @@ export const PathToCS = () => {
         </ul>
       </TextBlock>
       <TextBlock>
-        <em>Shortform information:</em>
+        <em>Short-form information:</em>
         <ul>
           <li>
             Red Blob Games -- a great site for animated algorithms and detailed
