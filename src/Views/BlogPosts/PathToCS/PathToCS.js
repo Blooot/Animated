@@ -2,14 +2,11 @@ import React from "react";
 import {
   DateBlock,
   HeaderBlock,
-  ImageBlock,
   TextBlock,
   TitleBlock,
 } from "../../../components/Blocks/index";
 import { BlogPost } from "../../../components/BlogPost";
-import { getImagePath } from "../../../utils/getImagePath";
 export const PathToCS = () => {
-  const local = PathToCS;
   return (
     <BlogPost>
       <TitleBlock>
@@ -78,7 +75,177 @@ export const PathToCS = () => {
         (perhaps even an open-source project) that can help in your journey.
       </TextBlock>
       <HeaderBlock>Resources</HeaderBlock>
-      <TextBlock>Stuff~</TextBlock>
+      <TextBlock>
+        <em>TeachYourselfCS.com</em>
+        <ul>
+          <li>
+            First and foremost, <a href="https://teachyourselfcs.com/">this</a>{" "}
+            has been a guidepost for me. I intend to finish reading all of the
+            resources listed there.
+          </li>
+        </ul>
+      </TextBlock>
+      <TextBlock>
+        <em>Courses and lectures:</em>
+        <ul>
+          <li>
+            Bradfield's Practical problem solving with Algorithms and Data
+            Structures{" "}
+            <a href="https://bradfieldcs.com/courses/algorithms/">Link</a>.
+          </li>
+          <li>
+            Bradfield's Computer Architecture and the Hardware/Software
+            Interface{" "}
+            <a href="https://bradfieldcs.com/courses/architecture/">Link</a>.
+          </li>
+          <li>
+            Offered by Stanford, Tim Roughgarden's class on Algorithms and Data
+            Structures. Available{" "}
+            <a href="https://www.coursera.org/specializations/algorithms">
+              here
+            </a>{" "}
+            and{" "}
+            <a href="https://online.stanford.edu/courses/soe-ycsalgorithms1-algorithms-design-and-analysis-part-1">
+              here
+            </a>
+            .
+          </li>
+          <li>
+            An introduction to relational databases{" "}
+            <a href="https://www.udacity.com/course/intro-to-relational-databases--ud197">
+              Link
+            </a>
+            .
+          </li>
+          <li>
+            Educative's Grokking the System Design Interview{" "}
+            <a href="https://www.educative.io/courses/grokking-the-system-design-interview">
+              Link
+            </a>
+            .
+          </li>
+          <li>
+            TeachYourselfCS recommends SICP (Structure and Interpretation of
+            Computer Programs) for learning how to program.{" "}
+            <a href="https://mitpress.mit.edu/sites/default/files/sicp/index.html">
+              Here
+            </a>{" "}
+            is the original, and{" "}
+            <a href="https://wizardforcel.gitbooks.io/sicp-in-python/content/">
+              here
+            </a>{" "}
+            is a Berkeley adapted Python version. Both are great.
+          </li>
+        </ul>
+      </TextBlock>
+      <TextBlock>
+        <em>Books:</em>
+        <ul>
+          <li>
+            The Algorithm Design Manual{" "}
+            <a href="http://www.algorist.com/">Link</a>.
+          </li>
+          <li>
+            Designing Data-Intensive Applications{" "}
+            <a href="https://github.com/Yang-Yanxiang/Designing-Data-Intensive-Applications">
+              Link
+            </a>
+            .
+          </li>
+          <li>
+            Code Complete{" "}
+            <a href="https://github.com/xianshenglu/document/blob/master/Code%20Complete%202nd%20Edition.pdf">
+              Link
+            </a>
+            .
+          </li>
+          <li>
+            Bradfield's book on algorithms{" "}
+            <a href="https://bradfieldcs.com/algos/">Link</a>.
+          </li>
+          <li>
+            You don't know JS{" "}
+            <a href="https://github.com/getify/You-Dont-Know-JS">Link</a>.
+          </li>
+          <li>
+            Think Python{" "}
+            <a href="https://greenteapress.com/wp/think-python-2e/">Link</a>.
+          </li>
+          <li>
+            The Art of Multiprocessor Programming{" "}
+            <a href="https://github.com/amilajack/reading/blob/master/Computer_Science/The%20Art%20of%20Multiprocessor%20Programming.pdf">
+              Link
+            </a>
+            .
+          </li>
+        </ul>
+      </TextBlock>
+      <TextBlock>
+        <em>Shortform information:</em>
+        <ul>
+          <li>
+            Red Blob Games -- a great site for animated algorithms and detailed
+            explanations <a href="https://www.redblobgames.com/">Link</a>.
+          </li>
+          <li>
+            3Blue1Brown -- Animated Math concepts{" "}
+            <a href="https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw">
+              Link
+            </a>
+            .
+          </li>
+          <li>
+            TypeScript and React information{" "}
+            <a href="https://fettblog.eu/typescript-react/">Link</a>.
+          </li>
+          <li>
+            The official React documentation is incredible{" "}
+            <a href="https://reactjs.org/docs/getting-started.html">Link</a>.
+          </li>
+          <li>
+            So is the official Django tutorial{" "}
+            <a href="https://docs.djangoproject.com/en/3.1/intro/tutorial01/">
+              Link
+            </a>
+            .
+          </li>
+          <li>
+            A great post on React's Reconciliation algorithm{" "}
+            <a href="https://blog.ag-grid.com/inside-fiber-an-in-depth-overview-of-the-new-reconciliation-algorithm-in-react/">
+              Link
+            </a>
+            .
+          </li>
+          <li>
+            Short video lecture on TypeScript/Node/GraphQL{" "}
+            <a href="https://www.newline.co/courses/the-newline-guide-to-building-your-first-graphql-server-with-node-and-typescript/welcome">
+              Link
+            </a>
+            .
+          </li>
+        </ul>
+      </TextBlock>
+      <TextBlock>
+        <em>Practice:</em>
+        <br />
+        <br />
+        First, build anything you want! While learning Python, I built an
+        arbitrage calculator and market web scraper for an online video game to
+        help my friends play the market. See my other projects{" "}
+        <a href="https://github.com/Blooot">here</a>. Also, I love studying
+        algorithms and practicing at the following sites.
+        <ul>
+          <li>
+            <a href="https://leetcode.com/">Leetcode</a>
+          </li>
+          <li>
+            <a href="https://atcoder.jp/">AtCoder</a>
+          </li>
+        </ul>
+      </TextBlock>
+      <TextBlock>
+        This list is incomplete and will be regularly updated :)
+      </TextBlock>
     </BlogPost>
   );
 };

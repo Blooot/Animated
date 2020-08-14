@@ -7,6 +7,9 @@ const Wrapper = styled.div`
   min-width: 100%;
   ul {
     margin: 15px 0;
+    li {
+      margin: 5px 0;
+    }
   }
 `;
 
