@@ -21,7 +21,6 @@
     "styled-components": "^5.1.0",
     "yargs": "^15.4.1"
   },
-  "homepage": "www.dalehamilton.dev",
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "yarn run build",
